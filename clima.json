@@ -1,0 +1,22 @@
+{
+    "search_url": "https://www.meteored.mx/clima_Torreon-America+Norte-Mexico-Coahuila-MMTC-1-22375.html",
+    "actions": [
+        {
+            "selector_type": "xpath",
+            "selector_value": "//div[@class='flex-r dos-semanas nuevo-4']",
+            "action_type": "wait"
+        }
+    ],
+    "data_structure": {
+        "selector_type": "xpath",
+        "selector_value": "/html/body/main/div[2]/section/section[2]/div/ul",
+        "row_selector": "li.grid-item.dia",
+        "columns": [
+            {"name": "Dia", "index": 0, "selector_type": "class", "selector_value": "text-0"},
+            {"name": "Fecha", "index": 1, "selector_type": "class", "selector_value": "subtitle-m"},
+            {"name": "Temp Max", "index": 2, "selector_type": "xpath", "selector_value": ".//span[@class='max changeUnitT']"},
+            {"name": "Temp Min", "index": 3, "selector_type": "xpath", "selector_value": ".//span[@class='min changeUnitT']"}
+        ]
+    },
+    "output_file": "clima.xlsx"
+}

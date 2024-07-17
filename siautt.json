@@ -1,15 +1,90 @@
 {
-    "browser": {
-        "name": "chrome"
+    "search_url": "https://uttorreon.mx",
+    "actions": [
+        {
+            "selector_type": "id",
+            "selector_value": "email",
+            "action_type": "input",
+            "value": "21170156"
+        },
+        {
+            "selector_type": "id",
+            "selector_value": "password",
+            "action_type": "input",
+            "value": "i8vo9nne3"
+        },
+        {
+            "selector_type": "xpath",
+            "selector_value": "//button[contains(@type, 'submit')]",
+            "action_type": "click"
+        },
+        {
+            "selector_type": "xpath",
+            "selector_value": "//span[contains(text(), 'Mi Espacio')]",
+            "action_type": "wait"
+        },
+        {
+            "selector_type": "xpath",
+            "selector_value": "//a[.//span[contains(text(), 'Mi Espacio')]]",
+            "action_type": "click"
+        },
+        {
+            "selector_type": "xpath",
+            "selector_value": "//span[contains(text(), 'Acad')]",
+            "action_type": "wait"
+        },
+        {
+            "selector_type": "xpath",
+            "selector_value": "//a[.//span[contains(text(), 'Acad')]]",
+            "action_type": "click"
+        },
+        {
+            "selector_type": "xpath",
+            "selector_value": "//span[contains(text(), 'Mis Calificaciones')]",
+            "action_type": "wait"
+        },
+        {
+            "selector_type": "xpath",
+            "selector_value": "//a[.//span[contains(text(), 'Mis Calificaciones')]]",
+            "action_type": "click"
+        },
+        {
+            "selector_type": "id",
+            "selector_value": "OConsultarCalificaciones",
+            "action_type": "wait"
+        },
+        {
+            "selector_type": "id",
+            "selector_value": "OConsultarCalificaciones",
+            "action_type": "click"
+        }
+    ],
+    "data_structure": {
+        "selector_type": "css_selector",
+        "selector_value": "#TablaHistorico tbody",
+        "row_selector": "tr",
+        "columns": [
+            {
+                "name": "Periodo",
+                "index": 0
+            },
+            {
+                "name": "Profesor",
+                "index": 1
+            },
+            {
+                "name": "Materia",
+                "index": 2
+            },
+            {
+                "name": "Unidades",
+                "index": 3
+            },
+            {
+                "name": "Final",
+                "index": 4
+            }
+        ]
     },
-    "url": {
-        "base_url": "https://uttorreon.mx"  
-    },
-    "credentials": {
-        "email": "21170156",
-        "password": "i8vo9nne3"
-    }
-    
+    "output_file": "historial_calificaciones.xlsx"
 }
-
-
