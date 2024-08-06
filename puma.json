@@ -1,0 +1,41 @@
+{
+    "search_url": "https://mx.puma.com",
+    "actions": [
+        
+       
+        {
+           "selector_type":"id",
+           "selector_value":"search-field",
+           "action_type":"input",
+           "value":"Pumas negros"
+        },
+        {
+            "selector_type": "id",
+            "selector_value": "search-field",
+            "action_type": "enter"
+        },
+        {
+            "selector_type":"xpath",
+            "selector_value":"//div[@class='CategoryPage-ProductListWrapper",
+            "action_type":"find"
+        },
+        {
+            "selector_type":"xpath",
+            "selector_value":"//ul[@class='ProductListPage CategoryProductList-Page']",
+            "action_type":"extract",
+            "row_selector":"li.ProductCard",
+            "columns":[
+                {"name":"Nombre","selector_type":"class_name","selector_value":"ProductCard-Name"},
+                {"name":"Precio","selector_type":"class_name","selector_value":"ProductPrice-CurrentPrice"}
+               
+            ],
+             "output_file": "pumas.xlsx"
+           
+        }
+
+       
+
+
+        
+    ]
+}

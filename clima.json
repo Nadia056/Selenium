@@ -3,20 +3,21 @@
     "actions": [
         {
             "selector_type": "xpath",
-            "selector_value": "//div[@class='flex-r dos-semanas nuevo-4']",
+            "selector_value": "//section[@class='dias card_struct']",
             "action_type": "wait"
+        },
+        {
+            "selector_type": "xpath",
+            "selector_value": "//section[@class='dias card_struct']",
+            "row_selector": "li.grid-item",
+            "action_type": "extract",
+            "columns": [
+                {"name": "Día", "selector_type": "class_name", "selector_value": "text-0"},
+                {"name": "Fecha", "selector_type": "class_name", "selector_value": "subtitle-m"},
+                {"name": "Temperatura Maxima", "selector_type": "class_name", "selector_value": "max"},
+                {"name": "Temperatura Minima", "selector_type": "class_name", "selector_value": "min"}
+            ],
+            "output_file": "clima.xlsx"
         }
-    ],
-    "data_structure": {
-        "selector_type": "xpath",
-        "selector_value": "/html/body/main/div[2]/section/section[2]/div/ul",
-        "row_selector": "li.grid-item.dia",
-        "columns": [
-            {"name": "Dia", "index": 0, "selector_type": "class", "selector_value": "text-0"},
-            {"name": "Fecha", "index": 1, "selector_type": "class", "selector_value": "subtitle-m"},
-            {"name": "Temp Max", "index": 2, "selector_type": "xpath", "selector_value": ".//span[@class='max changeUnitT']"},
-            {"name": "Temp Min", "index": 3, "selector_type": "xpath", "selector_value": ".//span[@class='min changeUnitT']"}
-        ]
-    },
-    "output_file": "clima.xlsx"
+    ]
 }

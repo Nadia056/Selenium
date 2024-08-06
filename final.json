@@ -1,0 +1,108 @@
+{
+    "search_url": "https://mx.aliexpress.com/",
+    "actions": [
+        {
+            "action_type": "click",
+            "selector_type": "class_name",
+            "selector_value": "pop-close-btn",
+            "value": null
+        },
+        {
+            "action_type":"input",
+            "selector_type":"id",
+            "selector_value":"search-words",
+            "value":"Relojes"
+        },
+        {
+            "action_type":"click",
+            "selector_type":"class_name",
+            "selector_value":"search--submit--2VTbd-T",
+            "value":null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "class_name",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "class_name",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "class_name",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "class_name",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "class_name",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "class_name",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "class_name",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "class_name",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "class_name",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "class_name",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "class_name",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "class_name",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "selector_type": "id",
+            "selector_value": "card-list",
+            "action_type": "extract",
+            "row_selector": "div.list--gallery--C2f2tvm.search-item-card-wrapper-gallery",
+            "columns": [
+                {"name": "Nombre", "selector_type": "class_name", "selector_value": "multi--titleText--nXeOvyr"},
+                {"name": "Precio", "selector_type": "class_name", "selector_value": "multi--price-sale--U-S0jtj"}
+            ],
+            "output_file": "ali.xlsx"
+        }
+        
+
+    ]
+}

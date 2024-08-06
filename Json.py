@@ -1,12 +1,12 @@
 import json
 
 class Json:
-    def __init__(self, config_file):
-        self.config_file = config_file
-        self.config = self._load_config()
+    def __init__(self, file_path):
+        self.file_path = file_path
+        self.config = self.load_json()
 
-    def _load_config(self):
-        with open(self.config_file, 'r') as file:
+    def load_json(self):
+        with open(self.file_path, 'r', encoding='utf-8') as file:
             return json.load(file)
 
     def get_config(self):
