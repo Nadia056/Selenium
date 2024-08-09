@@ -9,6 +9,11 @@
         {
             "selector_type": "xpath",
             "selector_value": "//section[@class='dias card_struct']",
+            "action_type":"scroll"
+        },
+        {
+            "selector_type": "xpath",
+            "selector_value": "//section[@class='dias card_struct']",
             "row_selector": "li.grid-item",
             "action_type": "extract",
             "columns": [
@@ -17,7 +22,8 @@
                 {"name": "Temperatura Maxima", "selector_type": "class_name", "selector_value": "max"},
                 {"name": "Temperatura Minima", "selector_type": "class_name", "selector_value": "min"}
             ],
-            "output_file": "clima.xlsx"
+            "output_file": "clima.xlsx",
+            "append": false
         }
     ]
 }

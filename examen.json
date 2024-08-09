@@ -1,0 +1,254 @@
+{
+    "search_url": "https://www.tecnm.mx/?vista=TecNM_Virtual&tecnm_virtual=Capitacion_Linea&S=G&registros=5&pn=2", 
+    "actions": [
+        {
+            "selector_type": "xpath",
+            "selector_value": "//div[contains(@class, 'container-fluid') and contains(@class, 'mx-auto') and contains(@class, 'border')]", 
+            "action_type": "extract",
+            "row_selector": ".//div[contains(@class, 'row') and contains(@class, 'mx-auto') and contains(@class, 'border')]",  
+            "columns": [
+                {
+                    "name": "Programa Educativo",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl-1')]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Asignatura",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and not(contains(@class, 'col-xl-1'))][1]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Tema",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and not(contains(@class, 'col-xl-1'))][2]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Sitio",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl-1')]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Enlace Directo",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and contains(@class, 'm-0 p-0')]//a"
+                },
+                {
+                    "name": "Alcance",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and not(contains(@class, 'col-xl-1'))][4]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Observaciones",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and not(contains(@class, 'col-xl-1'))][5]//div[@class='col-12 px-4']"
+                }
+            ],
+            "output_file": "Agronoma.xlsx",
+            "append": false
+        },
+        {
+            "selector_type": "xpath",
+            "selector_value": "/html/body/div[7]/div[2]/div[4]/form/div[1]/div[1]/select/option[3]",
+            "action_type": "click"
+
+        },
+        {
+            "selector_type": "xpath",
+            "selector_value": "//div[contains(@class, 'container-fluid') and contains(@class, 'mx-auto') and contains(@class, 'border')]", 
+            "action_type": "extract",
+            "row_selector": ".//div[contains(@class, 'row') and contains(@class, 'mx-auto') and contains(@class, 'border')]",  
+            "columns": [
+                {
+                    "name": "Programa Educativo",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl-1')]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Asignatura",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and not(contains(@class, 'col-xl-1'))][1]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Tema",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and not(contains(@class, 'col-xl-1'))][2]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Sitio",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl-1')]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Enlace Directo",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and contains(@class, 'm-0 p-0')]//a"
+                },
+                {
+                    "name": "Alcance",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and not(contains(@class, 'col-xl-1'))][4]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Observaciones",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and not(contains(@class, 'col-xl-1'))][5]//div[@class='col-12 px-4']"
+                }
+            ],
+            "output_file": "Geologicas.xlsx",
+            "append": false
+        },
+        {
+            "selector_type": "xpath",
+            "selector_value": "/html/body/div[7]/div[2]/form/div[1]/div[1]/select/option[6]",
+            "action_type": "click"
+
+        },
+        {
+            "selector_type": "xpath",
+            "selector_value": "//div[contains(@class, 'container-fluid') and contains(@class, 'mx-auto') and contains(@class, 'border')]", 
+            "action_type": "extract",
+            "row_selector": ".//div[contains(@class, 'row') and contains(@class, 'mx-auto') and contains(@class, 'border')]",  
+            "columns": [
+                {
+                    "name": "Programa Educativo",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl-1')]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Asignatura",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and not(contains(@class, 'col-xl-1'))][1]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Tema",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and not(contains(@class, 'col-xl-1'))][2]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Sitio",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl-1')]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Enlace Directo",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and contains(@class, 'm-0 p-0')]//a"
+                },
+                {
+                    "name": "Alcance",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and not(contains(@class, 'col-xl-1'))][4]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Observaciones",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and not(contains(@class, 'col-xl-1'))][5]//div[@class='col-12 px-4']"
+                }
+            ],
+            "output_file": "Ambientales.xlsx",
+            "append": false
+        },
+        {
+            "selector_type": "xpath",
+            "selector_value": "/html/body/div[7]/div[2]/form/div[1]/div[1]/select/option[7]",
+            "action_type": "click"
+
+        },
+        {
+            "selector_type": "xpath",
+            "selector_value": "//div[contains(@class, 'container-fluid') and contains(@class, 'mx-auto') and contains(@class, 'border')]", 
+            "action_type": "extract",
+            "row_selector": ".//div[contains(@class, 'row') and contains(@class, 'mx-auto') and contains(@class, 'border')]",  
+            "columns": [
+                {
+                    "name": "Programa Educativo",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl-1')]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Asignatura",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and not(contains(@class, 'col-xl-1'))][1]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Tema",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and not(contains(@class, 'col-xl-1'))][2]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Sitio",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl-1')]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Enlace Directo",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and contains(@class, 'm-0 p-0')]//a"
+                },
+                {
+                    "name": "Alcance",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and not(contains(@class, 'col-xl-1'))][4]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Observaciones",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and not(contains(@class, 'col-xl-1'))][5]//div[@class='col-12 px-4']"
+                }
+            ],
+            "output_file": "Bioquimica.xlsx",
+            "append": false
+        }, {
+            "selector_type": "xpath",
+            "selector_value": "/html/body/div[7]/div[2]/form/div[1]/div[1]/select/option[9]",
+            "action_type": "click"
+
+        },
+        {
+            "selector_type": "xpath",
+            "selector_value": "//div[contains(@class, 'container-fluid') and contains(@class, 'mx-auto') and contains(@class, 'border')]", 
+            "action_type": "extract",
+            "row_selector": ".//div[contains(@class, 'row') and contains(@class, 'mx-auto') and contains(@class, 'border')]",  
+            "columns": [
+                {
+                    "name": "Programa Educativo",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl-1')]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Asignatura",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and not(contains(@class, 'col-xl-1'))][1]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Tema",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and not(contains(@class, 'col-xl-1'))][2]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Sitio",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl-1')]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Enlace Directo",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and contains(@class, 'm-0 p-0')]//a"
+                },
+                {
+                    "name": "Alcance",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and not(contains(@class, 'col-xl-1'))][4]//div[@class='col-12 px-4']"
+                },
+                {
+                    "name": "Observaciones",
+                    "selector_type": "xpath",
+                    "selector_value": ".//div[contains(@class, 'col-12 col-xl') and not(contains(@class, 'col-xl-1'))][5]//div[@class='col-12 px-4']"
+                }
+            ],
+            "output_file": "Electronica.xlsx",
+            "append": false
+        }
+
+    ]
+}

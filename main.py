@@ -24,5 +24,5 @@ def main(config_file):
         scrapper.close()
 
 if __name__ == "__main__":
-    config_file = "final.json"  # Cambia el nombre del archivo JSON según sea necesario
+    config_file = "examen.json"  # Cambia el nombre del archivo JSON según sea necesario
     main(config_file)

@@ -75,8 +75,37 @@
                 {"name":"Unidades","index":3},
                 {"name":"Final","index":4}
             ],
-             "output_file": "historial_calificaciones.xlsx"
+             "output_file": "historial_calificaciones.xlsx",
+             "append": false
            
+        },
+        {
+            "selector_type": "xpath",
+            "selector_value": "//*[@id='TabConsultarCalificaciones']/div/div/div/div[2]/div/div[1]/div[2]/div[4]/div[2]/ul/li[4]/a",
+            "action_type": "click"
+        },
+        {
+            "selector_type":"css_selector",
+            "selector_value":"#TablaHistorico tbody",
+            "action_type":"wait"
+        },
+        {
+            "selector_type":"css_selector",
+            "selector_value":"#TablaHistorico tbody",
+            "action_type":"extract",
+            "row_selector":"tr",
+            "columns":[
+                {"name":"Periodo","index":0},
+                {"name":"Profesor","index":1},
+                {"name":"Materia","index":2},
+                {"name":"Unidades","index":3},
+                {"name":"Final","index":4}
+            ],
+             "output_file": "historial_calificaciones.xlsx",
+             "append": true
         }
+
+        
+
     ]
 }

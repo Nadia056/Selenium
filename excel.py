@@ -1,21 +1,21 @@
-import pandas as pd
 import openpyxl
+import os
 
 class Excel:
     def __init__(self, data):
         self.data = data
 
-    def export_to_excel(self, file_path):
-        workbook = openpyxl.Workbook()
-        sheet = workbook.active
-
-        if not self.data:
-            return
-
-        headers = list(self.data[0].keys())
-        sheet.append(headers)
-
-        for row in self.data:
-            sheet.append([row.get(header, '') for header in headers])
-
-        workbook.save(file_path)
+    def export_to_excel(self, filename, append=False):
+        if append and os.path.exists(filename):
+            workbook = openpyxl.load_workbook(filename)
+            sheet = workbook.active
+        else:
+            workbook = openpyxl.Workbook()
+            sheet = workbook.active
+            headers = list(self.data[0].keys())  # Convertir dict_keys a lista
+            sheet.append(headers)
+        
+        for row_data in self.data:
+            sheet.append(list(row_data.values()))
+        
+        workbook.save(filename)

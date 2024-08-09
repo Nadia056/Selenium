@@ -100,7 +100,8 @@
                 {"name": "Nombre", "selector_type": "class_name", "selector_value": "multi--titleText--nXeOvyr"},
                 {"name": "Precio", "selector_type": "class_name", "selector_value": "multi--price-sale--U-S0jtj"}
             ],
-            "output_file": "ali.xlsx"
+            "output_file": "ali.xlsx",
+            "append": false
         }
         
 

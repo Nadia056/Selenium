@@ -1,0 +1,80 @@
+{
+    "search_url":"http://127.0.0.1:8000/home",
+    "actions":
+    [
+        {
+            "selector_type":"id",
+            "selector_value":"nombre",
+            "action_type":"input",
+            "value":"Juan"
+        },
+        {
+            "selector_type":"id",
+            "selector_value":"email",
+            "action_type":"input",
+            "value":"Perez@gmail.com"
+        },
+        {  
+            "selector_type":"id",
+            "selector_value":"password",
+            "action_type":"input",
+            "value":"123456"
+
+        },
+        {
+            "selector_type":"id",
+            "selector_value":"edad",
+            "action_type":"input",
+            "value":"20"
+        },
+        {
+            "selector_type":"id",
+            "selector_value":"fecha-nacimiento",
+            "action_type":"input",
+            "value":"2000-01-01"
+            
+        },
+        {
+            "selector_type":"id",
+            "selector_value":"genero-femenino",
+            "action_type":"click"
+        },
+        {
+            "selector_type":"id",
+            "selector_value":"interes-programacion",
+            "action_type":"option",
+            "value":"true"
+        },
+        {
+            "selector_type":"id",
+            "selector_value":"pais",
+            "action_type":"select",
+            "value":"México"
+        },
+        {
+            "selector_type":"id",
+            "selector_value":"comentarios",
+            "action_type":"input",
+            "value":"Me gustaría aprender más sobre programación"
+
+        },
+        {
+            "selector_type":"id",
+            "selector_value":"archivo",
+            "action_type":"upload",
+            "value":"C:\\Users\\nadia\\OneDrive\\Imágenes\\1.jpg"
+        },
+        {
+            "selector_type":"id",
+            "selector_value":"website",
+            "action_type":"input",
+            "value":"www.juanperez.com"
+
+        },
+        {
+            "selector_type":"xpath",
+            "selector_value":"//button[@type='submit']",
+            "action_type":"click"
+        }
+    ]
+}
